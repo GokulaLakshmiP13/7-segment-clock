@@ -1,7 +1,5 @@
-// 7-segment mapping
-// 7-segment mapping (standard)
 const digitMap = {
-  0: ["a", "b", "c", "d", "e", "f"],        // no g
+  0: ["a", "b", "c", "d", "e", "f"],        
   1: ["b", "c"],
   2: ["a", "b", "d", "e", "g"],
   3: ["a", "b", "c", "d", "g"],
@@ -13,7 +11,7 @@ const digitMap = {
   9: ["a", "b", "c", "d", "f", "g"]
 };
 
-// clear digit
+
 function clearDigit(digitId) {
   ["a","b","c","d","e","f","g"].forEach(seg => {
     let segRem = document.getElementById(digitId + seg).classList.remove("on");
@@ -21,7 +19,7 @@ function clearDigit(digitId) {
   });
 }
 
-// light digit
+
 function setDigit(digitId, number) {
   clearDigit(digitId);
   digitMap[number].forEach(seg => {
@@ -30,7 +28,7 @@ function setDigit(digitId, number) {
   });
 }
 
-// update clock
+
 function updateClock() {
   const now = new Date();
   const hh = String(now.getHours()).padStart(2, "0");
