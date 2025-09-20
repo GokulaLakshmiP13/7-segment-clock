@@ -1,7 +1,5 @@
-// 7-segment mapping
-// 7-segment mapping (standard)
 const digitMap = {
-  0: ["a", "b", "c", "d", "e", "f"],        // no g
+  0: ["a", "b", "c", "d", "e", "f"],        
   1: ["b", "c"],
   2: ["a", "b", "d", "e", "g"],
   3: ["a", "b", "c", "d", "g"],
@@ -13,20 +11,18 @@ const digitMap = {
   9: ["a", "b", "c", "d", "f", "g"]
 };
 
-// clear digit
+
 function clearDigit(digitId) {
   ["a","b","c","d","e","f","g"].forEach(seg => {
-    let segRem = document.getElementById(digitId + seg).classList.remove("on");
-    console.log(segRem + "--clearrrDigit")
+  document.getElementById(digitId + seg).classList.remove("on");
   });
 }
 
-// light digit
+
 function setDigit(digitId, number) {
   clearDigit(digitId);
   digitMap[number].forEach(seg => {
-    let segAdd = document.getElementById(digitId + seg).classList.add("on");
-    console.log(segAdd + "--setttDigit")
+  document.getElementById(digitId + seg).classList.add("on");
   });
 }
 
