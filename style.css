@@ -23,13 +23,13 @@
 
 /* Horizontal segments */
 #h1a, #h2a, #m1a, #m2a, #s1a, #s2a {
-  position: absolute; top: 0; left: 12px; width: 50px; height: 10px;
+  position: absolute; top: 0; left: 8px; width: 50px; height: 10px;
 }
 #h1d, #h2d, #m1d, #m2d, #s1d, #s2d {
-  position: absolute; bottom: 0; left: 12px; width: 50px; height: 10px;
+  position: absolute; bottom: 0; left:8px; width: 50px; height: 10px;
 }
 #h1g, #h2g, #m1g, #m2g, #s1g, #s2g {
-  position: absolute; top: 85px; left: 12px; width: 50px; height: 10px;
+  position: absolute; top: 87px; left: 8px; width: 50px; height: 10px;
 }
 
 /* Vertical segments */
@@ -71,8 +71,8 @@
 
 /* segments */
 .segment {
-  background: rgb(220, 214, 214);
-  opacity: 0.2; /* OFF */
+  background: rgb(156, 150, 150);
+  
   transition: 0.3s;
 }
 .segment.on {
