@@ -26,7 +26,7 @@ function setDigit(digitId, number) {
   });
 }
 
-// update clock
+
 function updateClock() {
   const now = new Date();
   const hh = String(now.getHours()).padStart(2, "0");
