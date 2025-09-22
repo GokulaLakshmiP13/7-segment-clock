@@ -11,6 +11,18 @@ const digitMap = {
   9: ["a", "b", "c", "d", "f", "g"]
 };
 
+function createDigit(elemId) {
+            const digitContainer = document.getElementById(elemId);
+            if (!digitContainer) {
+                console.error(`Element with id ${elemId} not found.`);
+                return;
+            }
+            
+            const segments = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+            digitContainer.innerHTML = segments.map(seg => 
+                `<div id="${elemId}${seg}" class="segment segment-${seg}"></div>`
+            ).join('');
+        }
 
 function clearDigit(digitId) {
   ["a","b","c","d","e","f","g"].forEach(seg => {
