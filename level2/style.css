@@ -22,13 +22,31 @@ body {
   background: red;
 }
 
-/* horizontal */
 .a { top: 0; left: 8px; width: 24px; height: 5px; }
 .d { bottom: 0; left: 8px; width: 24px; height: 5px; }
 .g { top: 37px; left: 8px; width: 24px; height: 5px; }
 
-/* vertical */
 .b { top: 6px; right: 0; width: 5px; height: 28px; }
 .c { bottom: 6px; right: 0; width: 5px; height: 28px; }
 .e { bottom: 6px; left: 0; width: 5px; height: 28px; }
 .f { top: 6px; left: 0; width: 5px; height: 28px; }
+
+
+.clock-row {
+  display: flex;
+  align-items: center;
+}
+
+.colon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  margin: 0 10px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: red;
+}

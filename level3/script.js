@@ -33,9 +33,27 @@ function digit(n) {
 }
 
 function tick() {
-  const time = new Date().toLocaleTimeString('en-GB').replace(/:/g,'');
-  document.getElementById("clock").innerHTML =
-    [...time].map(digit).join("");
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2,'0');
+  const m = String(now.getMinutes()).padStart(2,'0');
+  const s = String(now.getSeconds()).padStart(2,'0');
+
+  const time = h + m + s;
+  let html = '';
+
+  [...time].forEach((d,i) => {
+    html += digit(d);
+
+    if (i === 1 || i === 3) {
+      html += `
+        <div class="colon">
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>`;
+    }
+  });
+
+  document.getElementById("clock").innerHTML = html;
 }
 
 setInterval(tick,1000);

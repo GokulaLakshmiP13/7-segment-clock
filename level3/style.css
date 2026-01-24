@@ -19,3 +19,17 @@ svg {
 .on {
   fill: red;
 }
+
+.colon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  margin: 0 10px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: red;
+}
