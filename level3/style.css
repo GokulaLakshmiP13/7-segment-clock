@@ -1,0 +1,21 @@
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+svg {
+  width: 50px;
+  height: 90px;
+  margin: 6px;
+}
+
+.seg {
+  fill: #222;
+}
+
+.on {
+  fill: red;
+}
