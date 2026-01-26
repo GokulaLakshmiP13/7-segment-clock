@@ -1,17 +1,32 @@
 body {
   background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
 }
 
-.clock {
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+
+
+  height: 100vh;
+}
+
+/* IMPORTANT: horizontal layout */
+
+
+
+#clock {
   display: flex;
   align-items: center;
 }
 
+
+/* digit */
 .digit {
   position: relative;
   width: 40px;
@@ -45,7 +60,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 80px;
-  margin: 0 10px;
+
+
+  margin: 0 12px;
 }
 
 .dot {
