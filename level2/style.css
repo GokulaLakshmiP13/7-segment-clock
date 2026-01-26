@@ -3,30 +3,18 @@ body {
   margin: 0;
 }
 
-
 .page {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
-
-
   height: 100vh;
 }
-
-/* IMPORTANT: horizontal layout */
-
-
 
 #clock {
   display: flex;
   align-items: center;
 }
 
-
-/* digit */
 .digit {
   position: relative;
   width: 40px;
@@ -60,8 +48,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 80px;
-
-
   margin: 0 12px;
 }
 

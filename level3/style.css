@@ -1,9 +1,20 @@
 body {
   background: black;
+  margin: 0;
+}
+
+.page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+/* 🔥 THIS IS THE KEY FIX */
+#clock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 svg {
@@ -20,12 +31,13 @@ svg {
   fill: red;
 }
 
+/* colon */
 .colon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 90px;
-  margin: 0 10px;
+  margin: 0 12px;
 }
 
 .dot {

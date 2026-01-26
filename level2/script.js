@@ -32,7 +32,6 @@ function tick() {
 
   [...time].forEach((d,i) => {
     html += digit(d);
-
     if (i === 1 || i === 3) {
       html += `
         <div class="colon">
